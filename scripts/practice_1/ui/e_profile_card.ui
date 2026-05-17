@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProfileCardWindow</class>
+ <widget class="QWidget" name="ProfileCardWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Карточка профиля</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget { background-color: #212121; color: #FFFFFF; font-family: Arial; font-size: 14px; }
+QLabel { font-weight: bold; min-width: 80px; }
+QLineEdit { background-color: #2A2A2A; border: 1px solid #444444; padding: 6px; border-radius: 2px; color: #FFFFFF; }
+QLineEdit:focus { border: 1px solid #666666; }</string>
+  </property>
+  <layout class="QFormLayout" name="form_layout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_last_name">
+     <property name="text">
+      <string>Фамилия</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="input_last_name">
+     <property name="placeholderText">
+      <string>Введите вашу фамилию</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_first_name">
+     <property name="text">
+      <string>Имя</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="input_first_name">
+     <property name="placeholderText">
+      <string>Введите ваше имя</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_middle_name">
+     <property name="text">
+      <string>Отчество</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="input_middle_name">
+     <property name="placeholderText">
+      <string>Введите ваше отчество</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_phone">
+     <property name="text">
+      <string>Телефон</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="input_phone">
+     <property name="placeholderText">
+      <string>Введите ваш телефон</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShipParametersWindow</class>
+ <widget class="QWidget" name="ShipParametersWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Параметры корабля</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget { background-color: #212121; color: #FFFFFF; font-family: Arial; font-size: 14px; }
+QGroupBox { font-weight: bold; border: 1px solid #555555; margin-top: 10px; padding: 15px; }
+QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 3px; }</string>
+  </property>
+  <layout class="QVBoxLayout" name="main_layout">
+   <item>
+    <widget class="QGroupBox" name="group_box">
+     <property name="title">
+      <string>Параметры корабля</string>
+     </property>
+     <layout class="QFormLayout" name="form_layout">
+      <property name="verticalSpacing">
+       <number>15</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_1">
+        <property name="text">
+         <string>Температура на борту</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="val_temp">
+        <property name="styleSheet">
+         <string>color: #FFB300; border: 1px solid #555555; padding: 2px 10px;</string>
+        </property>
+        <property name="text">
+         <string>22 C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Разгерметизация</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="val_leak">
+        <property name="styleSheet">
+         <string>color: #4CAF50; border: 1px solid #555555; padding: 2px 10px;</string>
+        </property>
+        <property name="text">
+         <string>Отсутствует</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Бак №1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="val_tank1">
+        <property name="styleSheet">
+         <string>color: #4CAF50; border: 1px solid #555555; padding: 2px 10px;</string>
+        </property>
+        <property name="text">
+         <string>Норма</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Бак №2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="val_tank2">
+        <property name="styleSheet">
+         <string>color: #4CAF50; border: 1px solid #555555; padding: 2px 10px;</string>
+        </property>
+        <property name="text">
+         <string>Норма</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Бак №3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="val_tank3">
+        <property name="styleSheet">
+         <string>color: #4CAF50; border: 1px solid #555555; padding: 2px 10px;</string>
+        </property>
+        <property name="text">
+         <string>Норма</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

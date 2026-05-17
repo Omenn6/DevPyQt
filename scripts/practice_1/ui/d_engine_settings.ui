@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EngineSettingsWindow</class>
+ <widget class="QWidget" name="EngineSettingsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Управление двигателями</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget { background-color: #212121; color: #FFFFFF; font-family: Arial; font-size: 13px; }
+QGroupBox { font-weight: bold; border: 1px solid #555555; margin-top: 15px; padding-top: 15px; }
+QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 5px; }
+QSlider::groove:vertical { background: #444444; width: 4px; border-radius: 2px; }
+QSlider::handle:vertical { background: #FFFFFF; border: 1px solid #777777; height: 14px; width: 14px; margin: 0 -5px; border-radius: 7px; }
+QSlider::handle:vertical:hover { background: #DDDDDD; }</string>
+  </property>
+  <layout class="QVBoxLayout" name="main_layout">
+   <item>
+    <widget class="QGroupBox" name="group_box">
+     <property name="title">
+      <string>Управление основными двигателями</string>
+     </property>
+     <layout class="QHBoxLayout" name="group_layout">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="v_layout_1">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QSlider" name="slider_1">
+          <property name="minimumHeight">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_1">
+          <property name="text">
+           <string>Двигатель №1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="v_layout_2">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QSlider" name="slider_2">
+          <property name="minimumHeight">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Двигатель №2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="v_layout_3">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QSlider" name="slider_3">
+          <property name="minimumHeight">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Двигатель №3</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="v_layout_4">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QSlider" name="slider_4">
+          <property name="minimumHeight">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Двигатель №4</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="v_layout_main">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QSlider" name="slider_main">
+          <property name="minimumHeight">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_main">
+          <property name="text">
+           <string>Общая тяга</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>
