@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QWidget" name="Window">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>450</width><height>550</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Логирование виджетов</string>
+  </property>
+  <layout class="QVBoxLayout" name="layoutMain">
+   <item>
+    <layout class="QHBoxLayout" name="layoutComboBox">
+     <item><widget class="QComboBox" name="comboBox"/></item>
+     <item><widget class="QPushButton" name="pushButtonComboBox"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutLineEdit">
+     <item><widget class="QLineEdit" name="lineEdit"><property name="placeholderText"><string>Введите текст</string></property></widget></item>
+     <item><widget class="QPushButton" name="pushButtonLineEdit"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutTextEdit">
+     <item><widget class="QTextEdit" name="textEdit"><property name="placeholderText"><string>Введите текст</string></property></widget></item>
+     <item><widget class="QPushButton" name="pushButtonTextEdit"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutPlainTextEdit">
+     <item><widget class="QPlainTextEdit" name="plainTextEdit"><property name="placeholderText"><string>Введите текст</string></property></widget></item>
+     <item><widget class="QPushButton" name="pushButtonPlainTextEdit"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutSpinBox">
+     <item><widget class="QSpinBox" name="spinBox"/></item>
+     <item><widget class="QPushButton" name="pushButtonSpinBox"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutDoubleSpinBox">
+     <item><widget class="QDoubleSpinBox" name="doubleSpinBox"/></item>
+     <item><widget class="QPushButton" name="pushButtonDoubleSpinBox"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutTimeEdit">
+     <item><widget class="QTimeEdit" name="timeEdit"/></item>
+     <item><widget class="QPushButton" name="pushButtonTimeEdit"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutDateTimeEdit">
+     <item><widget class="QDateTimeEdit" name="dateTimeEdit"/></item>
+     <item><widget class="QPushButton" name="pushButtonDateTimeEdit"><property name="text"><string>Получить данные</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutLog">
+     <item><widget class="QPlainTextEdit" name="plainTextEditLog"/></item>
+     <item><widget class="QPushButton" name="pushButtonClearLog"><property name="text"><string>Очистить лог</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+</ui>
